@@ -18,6 +18,7 @@ function dragItems() {
             drag = item;
             this.style.opacity = '0.7';
         })
+
         item.addEventListener('dragend', function () {
             drag = null;
             this.style.opacity = '1';
@@ -26,6 +27,7 @@ function dragItems() {
         boxs.forEach(box => {
             box.addEventListener('dragover', function (e) {
                 e.preventDefault();
+                box.append(drag);
                 this.style.backgroundColor = '#090';
                 this.style.color = '#fff';
             })
