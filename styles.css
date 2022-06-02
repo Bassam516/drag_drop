@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    gap: 60px;
+}
+.main{
+    background-color: #fff;
+    padding: 20px 80px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    text-align: center;
+}
+.main .form input{
+    display: block;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid blueviolet;
+}
+.main .form input:focus{
+    border-bottom: 1px solid blueviolet;
+    outline: none;
+}
+.main .form button{
+    border: none;
+    outline: none;
+    background-color: blueviolet;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+    opacity: .7;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+.main .form button:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.boxs{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    flex-wrap: wrap;
+    
+}
+.box{
+    background-color: #fff;
+    padding: 13px 30px;
+    width: 22%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+.box .item{
+    background-color: blueviolet;
+    color: #fff;
+    padding: 10px 30px;
+    margin: 5px 0;
+    text-align: center;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+.box .item:hover{
+    cursor: move;
+}
+
+@media (max-width:991.5px) {
+    .box{
+        width:45%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width:544px) {
+    .main{
+        padding: 20px 70px;
+    }
+    .box {
+        width: 95%;
+        margin-bottom: 10px;
+    }
+}
